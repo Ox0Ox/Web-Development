@@ -31,7 +31,7 @@ const Slug = async ({ params }: Props) => {
     <MaxWidthWrapper classname='prose dark:prose-invert mt-2'>
       {blog ? (
         <div className='w-full flex'>
-          <div className='w-full md:w-4/5 h-[82vh] overflow-y-auto scroll-smooth' dangerouslySetInnerHTML={{ __html: htmlcontent[1] }}></div>
+          <div className='w-full md:w-4/5 h-[84vh] overflow-y-auto scroll-smooth' id='main' dangerouslySetInnerHTML={{ __html: htmlcontent[1] }}></div>
           <div className='hidden md:block w-1/5 pl-5' dangerouslySetInnerHTML={{ __html: htmlcontent[2] }}></div>
         </div>
       ) : (

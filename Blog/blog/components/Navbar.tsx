@@ -19,12 +19,12 @@ const Navbar = () => {
             <div className="logo font-bold mx-5 text-3xl my-5">Blogger</div>
             <div className='flex items-center'>
                 <ul className='hidden md:flex mx-10 mr-5 gap-10 text-xl items-center'>
-                    <li className='hover:font-bold w-14'><Link href={'/'}>Home</Link></li>
-                    <li className='hover:font-bold w-14'><Link href={'/about'}>About</Link></li>
-                    <li className='hover:font-bold w-14'><Link href={'/blog'}>Blog</Link></li>
-                    <li className='hover:font-bold w-28'><Link href={'/contact'}>Contact Us</Link></li>
-                    <li className='hover:font-bold w-14'><Link href={'/login'}>Login</Link></li>
-                    <li className='hover:font-bold w-20'><Link href={'/signup'}>Sign Up</Link></li>
+                    <li className='hover:font-bold w-14 duration-100'><Link href={'/'}>Home</Link></li>
+                    <li className='hover:font-bold w-14 duration-100'><Link href={'/about'}>About</Link></li>
+                    <li className='hover:font-bold w-14 duration-100'><Link href={'/blog'}>Blog</Link></li>
+                    <li className='hover:font-bold w-28 duration-100'><Link href={'/contact'}>Contact Us</Link></li>
+                    <li className='hover:font-bold w-14 duration-100'><Link href={'/login'}>Login</Link></li>
+                    <li className='hover:font-bold w-20 duration-100'><Link href={'/signup'}>Sign Up</Link></li>
                 </ul>
                 <div className="menu flex items-center md:hidden mr-5">
                     <Sheet>

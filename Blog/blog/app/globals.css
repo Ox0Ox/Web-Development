@@ -8,6 +8,24 @@ html {
   scroll-padding: 80px;
 }
 
+#main::-webkit-scrollbar {
+  width: 5px;
+  /* Chrome, Safari, Opera - hides scrollbar */
+}
+#main::-webkit-scrollbar-track {
+  background: #1d1d1d;
+  /* Chrome, Safari, Opera - hides scrollbar */
+}
+#main::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+  /* Chrome, Safari, Opera - hides scrollbar */
+}
+#main::-webkit-scrollbar-thumb:hover {
+  background: #8e8e8e;
+  /* Chrome, Safari, Opera - hides scrollbar */
+}
+
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

@@ -25,6 +25,10 @@ counter(); // 1
 counter(); // 2
 ```
 
+![Some logo](/placeholder.jpg "logo")
+
+
+
 Closures are useful for creating private variables or encapsulating functionality. For example, you can use closures to create a private counter:
 
 ```js
