@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left t1">
+            <div class="home round bgblack">
+                <div class="logo"><img class='invert' src="Assets/Images/logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class='invert' src="Assets/Images/home.svg" alt="home">Home</li>
+                    <li><img src="Assets/Images/search.svg" alt="search"><span class="t2">Search</span></li>
+                </ul>
+            </div>
+            <div class="library round bgblack mt t2">
+                <div class="heading flex">
+                    <img src="Assets/Images/lib.svg" alt="Lib">
+                    <span>Your Library</span>
+                    <img src="Assets/Images/add.svg" alt="add">
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <!-- <li>
+                            <img class="musicimg" src="Assets/Images/music.svg" alt="music">
+                            <div class="songinfo">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <img src="Assets/Images/play1.svg" alt="">
+                                <p>Play Now</p>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                    <footer>
+                        <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy
+                                    Center</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy
+                                    Policy</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                        
+                    </footer>
+                    <button class="bgblack">English</button>
+            </div>
+        </div>
+        <div class="right round bgblack mt">
+            <div class="nav flex bgblack">
+                <img src="Assets/Images/left.svg" alt="left">
+                <img src="Assets/Images/right.svg" alt="right">
+                <div class="buttons">
+                    <button class="bgblack t2 sign">Sign Up</button>
+                    <button>Log in</button>
+                </div>
+            </div>
+            <div class="popart"></div>
+            <div class="popalbum">
+                <h1>Popular Albums</h1>
+                <div class="carder">
+                    <div data-folder="song1" class="card">
+                        <img class = 'play' src="Assets/Images/play.svg" alt="">
+                        
+                        <img src="https://i.scdn.co/image/ab67616d00001e029bb2d30b01ac2cada8a8ad03" alt="img">
+                        <h2>Random Songs</h2>
+                        <p>HAHA</p>
+                    </div>
+                    <div data-folder="song2" class="card">
+                        <img class = 'play' src="Assets/Images/play.svg" alt="">
+                        
+                        <img src="https://i.scdn.co/image/ab67616d00001e029bb2d30b01ac2cada8a8ad03" alt="img">
+                        <h2>Random SOngs</h2>
+                        <p>HAHAHA</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div> 
+            <div class="playbar bgblack">
+                    <div class = 'pname'>    
+                        <div class="sname">Play Your Song</div>
+                            <div class="volume">
+                                <div class="sound">
+                                    <img src="Assets/Images/vol.svg" alt="">
+                                </div>
+                                <div class="volbar"><div class="circle1"></div></div>
+                            </div>
+                    </div>
+                    <div class="playinfo">    
+                        <div class="songbuttons">
+                            <img id = 'prev' src="Assets/Images/prev.svg" alt="">
+                            <img id = 'playbtn' src="Assets/Images/play1.svg" alt="">
+                            <img id = 'next' src="Assets/Images/next.svg" alt="">
+                        </div>
+                        <div class="seekbar">
+                            <div class="circle">
+                            </div>
+                        </div>
+                        <div class="duration-display">
+                            <span id="currentTime">0:00</span> / <span id="totalDuration">0:00</span>
+                        </div>
+                    </div>
+            </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

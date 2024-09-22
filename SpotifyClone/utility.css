@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+}
+
+.justifycenter{
+    justify-content: center;
+}
+
+.aligncenter{
+    align-items: center;
+}
+
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.bgblack{
+    background-color: rgb(18, 18, 18);
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.round{
+    border-radius: 10px;
+}
+
+.mt{
+    margin-top: 10px;
+}
+.m2{
+    margin: 10px;
+    margin-left: 0;
+}
+.p1{
+    padding: 10px;
+}
+.p2{
+    padding: 20px;
+}
+
+.t1{
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.t2{
+    color: rgb(179, 179, 179);
+}
+
+.heightfixer{
+    box-sizing: border-box;
+}
+
+body{
+    scrollbar-width: 10px;
+    scrollbar-color: #333 #111;
+}
+
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+    border: 3px solid #111;
+}
+
+/* Optional: hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}

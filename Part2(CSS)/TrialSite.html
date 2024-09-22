@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Webpage</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            ;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            /* padding-left: 20px; */
+        }
+
+        .nav {
+            background-color: black;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        .container {
+            height: 85vh;
+            width: 85vw;
+            margin: 20px auto;
+            border: 2px solid black;
+            background-color: darkgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 450px;
+            width: 550px;
+            border: 2px solid black;
+            /* margin: 50px; */
+            font-family: 'baloo bhai 2';
+            text-align: center;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .box1 {
+            background-color: aquamarine;
+        }
+
+        .box2 {
+            background-color: beige;
+        }
+
+        .navlist {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navlist li a{
+            /* background-color: rgb(62, 58, 58); */
+            margin-left: 15px;
+            /* padding: 20px; */
+            font-family: 'Poppins';
+            transition-duration: 0.4s;
+
+        }
+
+        .navlist li a:hover {
+            background-color: aqua;
+        }
+
+        .navlist li a:active {
+            background-color: blue;
+        }
+
+        .navlogo {
+            height: 75px;
+            border-radius: 75px;
+            /* position: fixed; */
+            /* bottom: 10px; */
+            /* right: 15px; */
+        }
+
+        .logo {
+            height: 70px;
+            border-radius: 75px;
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+        }
+
+        .message {
+            height: 130px;
+            width: 370px;
+            border: 2px solid black;
+            margin: auto;
+            margin-bottom: 15px;
+            text-align: center;
+            border-radius: 30px;
+            font-family: 'baloo bhai 2';
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: black;
+            color: lightgray;
+        }
+
+        .footer {
+            height: 50px;
+            background-color: lightgray;
+            font-family: 'baloo bhai 2';
+            padding: 15px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-areas: 'footer1 footer2 footer3';
+            /* justify-content: center; */
+            /* gap: 30px; */
+        }
+
+        .container1 {
+            height: 85vh;
+            width: 85vw;
+            margin: 20px auto;
+            border: 2px solid black;
+            background-color: darkgray;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            justify-items: center;
+            align-items: center;
+            gap: 5px, 10px;
+
+        }
+
+        .linkbox {
+            border: solid black;
+            border-radius: 10px;
+            position: relative;
+            height: 80%;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+            align-items: center;
+            gap: 5px, 10px;
+
+        }
+
+        .boxhead {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            text-align: center;
+        }
+
+        .head {
+            font-size: large;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .subhead {
+            color: grey;
+            font-size: small;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bit32 {
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 10px;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            transition: 0.4s;
+        }
+
+        .bit32 a {
+            font-size: medium;
+        }
+
+        .bit32:hover {
+            background-color: red;
+        }
+
+        .bit32:active {
+            background-color: orange;
+        }
+
+        .bit64 {
+            background-color: lightgreen;
+            padding: 5px;
+            border-radius: 10px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            
+        }
+
+        .bit64:hover {
+            background-color: red;
+        }
+
+        .bit64:active {
+            background-color: orange;
+        }
+
+        .bit64 a {
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul class=navlist>
+            <li><img class="navlogo"
+                    src="https://img.freepik.com/premium-photo/black-logo-with-silver-logo-that-says-silver-it_905510-10632.jpg"
+                    alt="logo"></li>
+            <li style=" margin-left: auto;"><a style="padding: 25px;"href="">Home</a></li>
+            <li ><a style="padding: 25px;" href="">About</a></li>
+            <li ><a style="padding: 25px;"href="">Services</a></li>
+            <li style="margin-right: 25px;"><a style="padding: 25px;"href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="box box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur nemo
+            veritatis aliquam. Porro eos dolor, non dolorum fugit asperiores quos quisquam recusandae consequatur
+            obcaecati ea repudiandae magnam dignissimos minus perferendis quae deleniti qui rerum neque tenetur ipsum
+            laboriosam nesciunt. Nihil autem ipsum cum laborum modi tempora adipisci maiores sed, facilis in asperiores
+            rerum distinctio qui reprehenderit? Totam, molestias quis.</div>
+        <div class="box box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, error. Eveniet
+            voluptatum, delectus porro magnam neque corporis nisi sequi ratione id sit impedit mollitia, tenetur quae
+            consequatur officia hic at reiciendis a minus soluta similique modi temporibus! Deleniti nobis facilis atque
+            iusto voluptas ratione esse earum, nulla voluptatem quod nemo sit quam! Facilis non assumenda iusto!</div>
+    </div>
+
+    <div class="container1">
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">English</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Italiano</div>
+                <div class="subhead">Italian</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+        <div class="linkbox">
+            <div class="boxhead">
+                <div class="head">Deutsch</div>
+                <div class="subhead">German</div>
+            </div>
+            <div class="bit32"><a href="Saturn1.jpg">Download 32-bit</a></div>
+            <div class="bit64"><a href="Saturn1.jpg">Download 64-bit</a></div>
+        </div>
+    </div>
+    <div>
+        <img class="logo"
+            src="https://img.freepik.com/premium-photo/black-logo-with-silver-logo-that-says-silver-it_905510-10632.jpg"
+            alt="logo">
+    </div>
+    <div class='message'>Welcome to this trial website, Hope you all like it and enjoy :D</div>
+    <div class="footer"><span style="grid-area: footer1; justify-self: center;">All rights reserved</span><span
+            style="grid-area: footer2;justify-self: center;">Trial CSS</span><span
+            style="grid-area: footer3;justify-self: center;">Copyright &copy;</span></div>
+</body>
+
+</html>

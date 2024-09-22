@@ -1,0 +1,78 @@
+HTML NOTES
+
+Core Web Vitals-
+
+Largest Contentful Paint(LCP)(less than 2.5 seconds)
+First Input Display(FID)(less than 100 miliseconds)
+Cumulative Layout Shift(CLS)(Should be Minimal)
+
+Search Engine Optimisation(SEO)
+
+Lighthouse report
+
+Inline elements: Those elements which only take up as much width as required
+Block-Level elements: Those elements that start on a new line and take up the entire width of the container by default
+
+CSS
+# - ID
+. - Class
+
+ID helps in finding particular elements in a webpage and helps in opening pages directly to a particular place without the user having to scroll
+
+Audio Preload Attribute - 
+auto - The author thinks that the browser should load the entire audio file when the page loads
+metadata - The author thinks that the browser should load only metadata when the page loads
+none - The author thinks that the browser should NOT load the audio file when the page loads
+
+Semantic Tags help search engines understand the website better for a good ranking, better for SEO
+
+HTML Entities are used for showcasing text which may clash with html syntax
+
+CSS - Cascading Style Sheets
+3 ways of adding: 
+Inline CSS(Style Attribute)... Try to avoid
+Internal CSS(Style Tag)... Use when webpage is small
+External CSS(CSS file)... Use when webpage is large
+
+
+Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+
+CSS Sizing units:
+px - pixel
+vw - according to viewport width(out of 100%)
+vh - according to viewport height(out of 100)
+em - inherited size change(1 = 100%)... inherited size is the size that is given previously, em captures that as default
+rem - root element inherited size change... html is root element
+vmin, vmax - according to the min/max of the given device dimensions, laptop vmin is height whereas in phone it is witdth
+% - percentage of parent container
+
+CSS Positioning-
+Position Absolute is positioning according to nearest ancestor with non static positioning or has properties of transform, filter, perspective
+Position Relative is positioning from initial position set
+Position Fixed is positioning the element at a fixed position
+Position Sticky is positioning the element that it gets stuck from the top/bottom even after scrolling, ex: nav bars
+
+SVG code:
+xmlns="http://www.w3.org/2000/svg"
+
+
+
+tailwind config--
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['*.html'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+"build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"

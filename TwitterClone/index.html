@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="src/output.css">
+    <style>
+        /* Add your custom styles here */
+        .second {
+            height: 100vh;
+            /* Full height of the viewport */
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+            scrollbar-width: none;
+            /* Firefox - hides scrollbar */
+            -ms-overflow-style: none;
+        }
+
+        .second::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Opera - hides scrollbar */
+        }
+
+        @media screen and (max-width: 800px) {
+            .sidebar ul li .text {
+                display: none !important;
+            }
+
+            .sidebar ul li .poster {
+                display: block !important;
+            }
+
+            .first {
+                width: 20%;
+            }
+
+            /* .sidebar ul li{
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 8px;
+                padding-right: 8px;
+            } */
+
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .first {
+                width: 30%;
+            }
+
+            .third {
+                width: 80%;
+            }
+
+        }
+
+        @media screen and (max-width: 550px) {
+            .first {
+                width: 15%;
+            }
+
+            .third {
+                display: none;
+            }
+
+        }
+
+        @media screen and (min-height: 1000px) {
+
+            .first .sidebar ul li {
+                margin-top: 30px !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex container mx-auto">
+        <div class="first w-[60%]">
+
+            <div class="sidebar flex justify-center">
+                <ul class="flex flex-col text-xl space-y-2 font-bold">
+                    <li class="flex justify-start px-4">
+                        <div class="my-3 logo invert">
+                            <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Home</span>
+                        <span class="text">Home</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Search</span>
+                        <span class="text">Explore</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Notifications</span>
+                        <span class="text">Notifications</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Mail</span>
+                        <span class="text">Messages</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Note_Alt</span>
+                        <span class="text">Grok</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Receipt</span>
+                        <span class="text">Lists</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Bookmarks</span>
+                        <span class="text">Bookmarks</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">People</span>
+                        <span class="text">Communities</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24" color="#000000" fill="none">
+                            <path
+                                d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="text">Premium</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Person</span>
+                        <span class="text">Profile</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-4 py-2 hover:rounded-full">
+                        <span class="text-2xl material-symbols-outlined">Pending</span>
+                        <span class="text">More</span>
+                    </li>
+                    <li
+                        class="flex justify-center items-center gap-3 w-[95%] bg-blue-500 hover:cursor-pointer px-4 py-2 rounded-full">
+                        <span class="text">Post</span>
+                        <span class="text-2xl material-symbols-outlined poster" style="display: none;">edit</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="second w-full border-[1px] border-x-gray-600 border-y-black relative h-full">
+            <div class="top flex mt-2 relative">
+                <div class="absolute w-[17%] h-1 bg-blue-500 bottom-0 left-[15%]"></div>
+                <div class="left font-bold w-1/2 flex justify-center">For You</div>
+                <div class="right font-bold w-1/2 flex justify-center">Following</div>
+                <div class="settings mr-2">
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                </div>
+            </div>
+            <div class="bg-gray-600 w-full h-[1px]"></div>
+            <div class="whathapp flex">
+                <div class="img">
+                    <img src="Assets/Images/Saturn1.jpg" alt="" width="50px" class="rounded-full mx-2 mt-2">
+                </div>
+                <div class="mt-2 ml-3 mr-8 w-full ">
+                    <input class="bg-black text-white w-full mt-3 text-xl" type="text" placeholder="What is happening?!"
+                        style="outline: none;">
+                    <div class="spanner flex items-center mt-3 text-blue-400">
+                        <span class="material-symbols-outlined mr-2 text-xl">
+                            public
+                        </span>
+                        <span>Everyone can reply</span>
+                    </div>
+                    <div class="bg-gray-600 w-full h-[0.5px] mt-2"></div>
+                    <div class="last flex items-center">
+                        <div class="icons w-full flex text-blue-400 mt-2">
+                            <span class="material-symbols-outlined mr-3">
+                                image
+                            </span>
+                            <span class="material-symbols-outlined mr-3">
+                                picture_as_pdf
+                            </span>
+                            <span class="material-symbols-outlined mr-3">
+                                ballot
+                            </span>
+                            <span class="material-symbols-outlined mr-3">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined mr-3">
+                                calendar_clock
+                            </span>
+                            <span class="material-symbols-outlined text-blue-400 opacity-50">
+                                location_on
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-center items-center gap-3 bg-blue-500 hover:cursor-pointer px-4 py-2 rounded-full mt-2">
+                            Post
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-600 w-full h-[2px] mt-2"></div>
+            <div class="posts">
+                <div class="post flex">
+                    <div class="img">
+                        <img src="Assets/Images/Saturn1.jpg" alt="" width="50px" class="rounded-full mx-2 mt-2">
+                    </div>
+                    <div class="content mr-5 ml-10 mb-3">
+                        <span class="font-bold text-sm">
+                            non aesthetic things
+                        </span>
+                        <span class="text-gray-500 text-sm">@PicturesFolder 6h</span>
+                        <div>
+                            legend
+                        </div>
+                        <div class="img">
+                            <img src="Assets/Images/Saturn1.jpg" alt="" class="rounded-2xl mt-2 w-fit">
+                        </div>
+                        <div class="icons w-full flex mt-3 text-gray-500 text-sm justify-between">
+                            <div class="flex w-[80%] justify-between items-center">
+                                <div class="flex justify-center items-center">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>
+                                    <span>1k</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>
+                                    <span>1k</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    <span>1k</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span class="material-symbols-outlined">
+                                        equalizer
+                                    </span>
+                                    <span>1k</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-end">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    upload
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-600 w-full h-[1px]"></div>
+            </div>
+            <div class="posts">
+                <div class="post flex">
+                    <div class="img">
+                        <img src="Assets/Images/Saturn1.jpg" alt="" width="50px" class="rounded-full mx-2 mt-2">
+                    </div>
+                    <div class="content mr-5 ml-10 mb-3">
+                        <span class="font-bold text-sm">
+                            non aesthetic things
+                        </span>
+                        <span class="text-gray-500 text-sm">@PicturesFolder 6h</span>
+                        <div>
+                            legend
+                        </div>
+                        <div class="img">
+                            <img src="Assets/Images/Saturn1.jpg" alt="" class="rounded-2xl mt-2 w-fit">
+                        </div>
+                        <div class="icons w-full flex mt-3 text-gray-500 text-sm justify-between">
+                            <div class="flex w-[80%] justify-between items-center">
+                                <div class="flex justify-center items-center">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>
+                                    <span>1k</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>
+                                    <span>1k</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                    <span>1k</span>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <span class="material-symbols-outlined">
+                                        equalizer
+                                    </span>
+                                    <span>1k</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-end">
+                                <span class="material-symbols-outlined">
+                                    bookmark
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    upload
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-gray-600 w-full h-[1px]"></div>
+            </div>
+        </div>
+        <div class="third flex flex-col items-center w-[60%]">
+            <div class="search w-[80%] mt-2">
+                <input type="text" class='bg-gray-800 rounded-full p-3 w-full text-white ' placeholder="Search">
+            </div>
+            <div class="what pb-4 mt-4 bg-gray-800 rounded-3xl w-[80%]">
+                <h1 class=" m-3 text-xl font-bold">Whats Happening</h1>
+                <div class="item mt-3 hover:bg-gray-700 hover:cursor-pointer pl-3">
+                    <div class="text-xs text-gray-500">Trending in India</div>
+                    <div class="font-bold">#MissileAttack</div>
+                    <div class="text-xs text-gray-500">41.4k Views</div>
+                </div>
+                <div class="item mt-3 hover:bg-gray-700 hover:cursor-pointer pl-3">
+                    <div class="text-xs text-gray-500">Trending in India</div>
+                    <div class="font-bold">#MissileAttack</div>
+                    <div class="text-xs text-gray-500">41.4k Views</div>
+                </div>
+                <div class="item mt-3 hover:bg-gray-700 hover:cursor-pointer pl-3">
+                    <div class="text-xs text-gray-500">Trending in India</div>
+                    <div class="font-bold">#MissileAttack</div>
+                    <div class="text-xs text-gray-500">41.4k Views</div>
+                </div>
+                <div class="item mt-3 hover:bg-gray-700 hover:cursor-pointer pl-3">
+                    <div class="text-xs text-gray-500">Trending in India</div>
+                    <div class="font-bold">#MissileAttack</div>
+                    <div class="text-xs text-gray-500">41.4k Views</div>
+                </div>
+                <div class="item mt-3 pl-3 hover:cursor-pointer">
+                    <div class="text-xs text-blue-500">Show more</div>
+                </div>
+            </div>
+            <div class="what pb-4 mt-4 bg-gray-800 rounded-3xl w-[80%]">
+                <h1 class=" m-3 text-xl font-bold">Who To Follow</h1>
+                <div
+                    class="item mt-3 hover:bg-gray-700 hover:cursor-pointer py-2 px-3 flex justify-between items-center">
+                    <div class="font-bold">Darshan</div>
+                    <div class="follow rounded-full bg-white text-black px-3 py-2 font-bold">Follow</div>
+                </div>
+                <div
+                    class="item mt-2 hover:bg-gray-700 hover:cursor-pointer py-2 px-3 flex justify-between items-center">
+                    <div class="font-bold">Darshan</div>
+                    <div class="follow rounded-full bg-white text-black px-3 py-2 font-bold">Follow</div>
+                </div>
+                <div class="item mt-3 pl-3 hover:cursor-pointer">
+                    <div class="text-xs text-blue-500">Show more</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

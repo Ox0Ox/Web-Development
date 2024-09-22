@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(33, 31, 31);
+    color: aqua;
+}
+
+td {
+    border: 2px solid aqua;
+}
+
+.red {
+    color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+canvas {
+    background-color: aliceblue;
+}

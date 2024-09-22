@@ -1,0 +1,29 @@
+HTML NOTES
+
+Core Web Vitals-
+
+Largest Contentful Paint(LCP)(less than 2.5 seconds)
+First Input Display(FID)(less than 100 miliseconds)
+Cumulative Layout Shift(CLS)(Should be Minimal)
+
+Search Engine Optimisation(SEO)
+
+Lighthouse report
+
+Inline elements: Those elements which only take up as much width as required
+Block-Level elements: Those elements that start on a new line and take up the entire width of the container by default
+
+CSS
+# - ID
+. - Class
+
+ID helps in finding particular elements in a webpage and helps in opening pages directly to a particular place without the user having to scroll
+
+Audio Preload Attribute - 
+auto - The author thinks that the browser should load the entire audio file when the page loads
+metadata - The author thinks that the browser should load only metadata when the page loads
+none - The author thinks that the browser should NOT load the audio file when the page loads
+
+Semantic Tags help search engines understand the website better for a good ranking, better for SEO
+
+HTML Entities are used for showcasing text which may clash with html syntax

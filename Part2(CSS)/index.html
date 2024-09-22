@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        body {
+            color: aqua;
+            background-color: rgb(21, 24, 24);
+        }
+
+        @media screen and (orientation: portrait) {
+            .boxcolumn {
+                border: 5px solid black;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        #Internal {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Types of CSS</h1>
+    <div>
+        <ol>
+            <li style="color: yellow; background-color: red;">Inline CSS</li>
+            <li id='Internal'>Internal CSS</li>
+            <li id='External'>External CSS</li>
+        </ol>
+    </div>
+    <br>
+    <h1>Types of Selectors</h1>
+    <div>
+        <ol>
+            <li>Element Selector</li>
+            <li class='red'>Class Selector</li>
+            <li id='green'>ID Selector</li>
+            <li>
+                <p>Child Selector asdjhfaskjfhasi;fhasuifhaisfhasiufhas;kfbyugasjfba;suid</p>
+            </li>
+            <li>
+                <p>
+                <article>Descendant Selector</article>
+                </p>
+            </li>
+            <li>Psuedo Selector <span>First Child</span><span> 2nd Child </span><a href="https://www.google.com">Visited
+                    Site</a><a id='visited' href="https://www.google.com">Visited Site</a><a
+                    href="https://www.google1.com">Unvisited Site</a>
+            </li>
+        </ol>
+    </div>
+    <br>
+    <div id='BoxModel'>
+        <h1>Box Model</h1>
+        <div class="box box1">I am box1</div>
+        <div class="box box2">I am box2</div>
+    </div>
+    <h1>Fonts</h1>
+    <div id='Fonts'>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit dignissimos, quo consectetur
+            possimus delectus doloremque reprehenderit culpa nemo, facere doloribus harum, voluptatum dicta
+            perspiciatis. Neque nulla in facilis magni aperiam vero. Minus sunt assumenda laboriosam iste, sapiente
+            earum at voluptates blanditiis dignissimos quae dolor?
+        </p>
+    </div>
+    <br>
+    <h1>Overflow</h1>
+    <div id='Over'>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit dignissimos, quo consectetur
+            possimus delectus doloremque reprehenderit culpa nemo, facere doloribus harum, voluptatum dicta
+            perspiciatis. Neque nulla in facilis magni aperiam vero. Minus sunt assumenda laboriosam iste, sapiente
+            earum at voluptates blanditiis dignissimos quae dolor?
+        </p>
+    </div>
+    <h1>Specificity</h1>
+    <iframe src="https://codewithharry.com/tutorial/css-specificity" width="600" height="500"></iframe>
+    <br>
+    <h1>Sizing units</h1>
+    <div class="container">Hello There</div>
+    <div class="container" style="text-overflow: ellipsis; overflow: hidden;">Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Neque sunt natus, magni ratione
+        dolore accusamus architecto mollitia aliquam nam omnis cupiditate, dolor quibusdam laboriosam exercitationem
+        doloribus molestias deleniti atque facere adipisci cum quo culpa eveniet illum. Asperiores accusantium dolorum
+        nemo excepturi suscipit recusandae possimus harum.</div>
+    <h1>CSS Display Property</h1>
+    <div class="box3">
+        Making given division as inline
+    </div>
+    <span>&nbsp;&nbsp;&nbsp;Hello there</span>
+    <h1>Shadows and Outlines</h1>
+    <div id="boxshadow">
+        <p id='shadowtext'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestias cupiditate
+            voluptatem, nam autem voluptatibus magni, voluptatum saepe tempora expedita sed vel quia.</p>
+    </div>
+    <br>
+    <h1>CSS Lists</h1>
+    <div>
+        <nav>
+            <ul style="display: flex;">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <h1>Card using CSS</h1>
+    <div id='card'>
+        <img id='cardimg' src="Saturn1.jpg" height="370" alt='Saturn'>
+        <div style='margin-top: 20px;'>
+            <span style="border: 2px solid aqua; border-radius: 20px; margin-left: 40px; padding: 5px;">Planet</span>
+            <span style="border: 2px solid aqua; border-radius: 20px; padding: 5px;">Space</span>
+        </div>
+        <h1 style="margin-left: 25px;">Saturn The Planet</h1>
+        <p style="margin-left: 25px; margin-top: -10px; margin-right: 15px;">Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Distinctio, eligendi voluptatem neque hic minima delectus, officia odit vitae recusandae
+            esse libero quidem ipsa?</p>
+        <div id='budiv'><button id='cardbu'>Read More</button></div>
+    </div>
+    <br>
+    <h1>Variables</h1>
+    <div id="variablenav">
+        <ul id='variablelist'>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id='variablediv'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat doloremque quasi delectus magni consectetur
+        voluptate dolores! Cupiditate vel neque aliquam, odit maxime aperiam consectetur fugiat laboriosam tempora sed
+        praesentium eius a doloribus culpa natus, veniam debitis nam explicabo dolore dignissimos corrupti harum
+        suscipit. Quidem, autem!
+    </div>
+    <br>
+    <h1>Media usage</h1>
+    <div class='boxes'>
+        <div class="boxcolumn"></div>
+        <div class="boxcolumn"></div>
+        <div class="boxcolumn"></div>
+    </div>
+    <br>
+    <h1>More of CSS Selectors</h1>
+    <div class="containers">
+        <div class="contain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt odit cupiditate
+            error vel delectus placeat exercitationem quia, beatae voluptatibus ut accusamus, autem ab quod dolorem
+            dolores quaerat, fuga illum distinctio debitis. Excepturi odio blanditiis voluptate fugit suscipit ducimus
+            accusantium. -- Only first line has different color</div>
+        <div class="contain">Using nth child</div>
+        <div data-color='primary' class="contain">Using attributes</div>
+        <div class="contain">Changing color of selection</div>
+        <input style='margin-top: 20px;' type='text' placeholder="Input Placeholder Properties">
+    </div>
+    <br>
+    <h1>CSS Flexbox</h1>
+    <div class="flexd">
+        <div class="flexb order-2">ONE</div>
+        <div class="flexb order-3">TWO</div>
+        <div class="flexb order-4">THREE</div>
+        <div class="flexb order-1">FOUR</div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+        <div class="flexb"></div>
+    </div>
+    <br>
+    <h1>CSS Grid</h1>
+    <h2>Row/Column number method</h2>
+    <div class="gridder">
+        <div class="griditem">1</div>
+        <div class="griditem">2</div>
+        <div class="griditem">3</div>
+        <div class="griditem griditem-4">4</div>
+        <div class="griditem">5</div>
+    </div>
+    <br>
+    <h2>Area method</h2>
+    <div class="gridder1">
+        <div class="griditem1 griditem1-1">1</div>
+        <div class="griditem1 griditem1-2">2</div>
+        <div class="griditem1 griditem1-3">3</div>
+        <div class="griditem1 griditem1-4">4</div>
+        <div class="griditem1">5</div>
+    </div>
+    <br>
+    <h1>CSS Transform</h1>
+    <div class="transform">
+        <div class="transformb">Degree Turn</div>
+        <div class="transformb1">Rotate Turn</div>
+        <div class="transformb2">Translate(Object is placed later as specified)</div>
+        <div class="transformb5">Scale</div>
+        <div class="transformb6">Skew</div>
+        <div class="transformb7">Multiple Properties at Once</div>
+        <div class="transformb8">Changin origin</div>
+    </div>
+    <br>
+    <iframe src="Demo.html" width="1200px" height="500px"></iframe>
+    <br>
+    <h1>Transitions</h1>
+    <div style="height: 300px; width: 500px; border: solid;">
+        <div class="boxtranslate translating"></div>
+    </div>
+    <br>
+    <h1>Animations</h1>
+    <div style="height: 500px; width: 700px; border: solid aqua;">
+        <div class="boxanimate"></div>
+    </div>
+    <br>
+    <h1>Ball animation</h1>
+    <div style="height: 370px; width: 850px; padding: 0px 70px; border: solid aqua;">
+        <div class="ballanimate"></div>
+    </div>
+    <br>
+    <h1>CSS Object Fit</h1>
+    <div style="height: 500px; width: 700px; border: solid aqua;">
+        <img id="imger" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg">
+    </div>
+
+    <div id = 'back' style="height: 500px; width: 700px; border: solid aqua;"></div>
+    <br>
+    <h1>CSS Filters</h1>
+    <div>
+        <img style="filter: blur(0px) invert(1) contrast(110%);" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="">
+    </div>
+    <br>
+    <h1>CSS Positions</h1>
+    <div id='marginless'>
+        <div class="box4 box5">Sticky position</div>
+        <div class="box4 box6">Relative position</div>
+        <div class="box4 box7">Fixed position</div>
+        <div class="box4 box8">Absolute Position</div>
+    </div>
+
+</body>
+
+</html>

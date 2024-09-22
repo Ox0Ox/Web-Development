@@ -1,0 +1,10 @@
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav{
+    background-color: peachpuff;
+    padding: 10px;
+}

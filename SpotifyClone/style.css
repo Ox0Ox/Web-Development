@@ -1,0 +1,341 @@
+:root{
+    --a:0;
+}
+
+.left{
+    width: 25vw;
+    padding: 10px;
+    height: 85vh;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    width: 75vw;
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+.home{
+    padding: 20px;
+}
+
+.home ul li{
+    list-style: none;
+    gap: 15px;
+    width: 25px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.heading img{
+    width: 25px;
+    position: relative;
+    top: 5px;
+}
+
+.heading>span{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.heading :nth-child(3){
+    margin-left: auto;
+}
+
+.library{
+    /* height: 71%; */
+    position: relative;
+    padding: 20px;
+    padding-bottom: 0;
+    flex-grow: 1;
+}
+
+.library>button{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+footer{
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+}
+
+footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+footer button{
+    position: relative;
+    left: -10px;
+    bottom: -10px;
+}
+
+.buttons{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.buttons button{
+    border-radius: 25px;
+    border-style: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+
+
+.nav{
+    padding: 10px;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 40px;
+}
+
+/* .header *{
+    margin-top: 10px;
+} */
+
+.popalbum{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'poppins';
+}
+
+.carder{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+}
+
+.card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-top: 20px;
+    gap: 10px;
+    font-family: 'poppins';
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.card:hover{
+    background-color: rgb(26, 26, 26);
+    cursor: pointer;
+    --a:1;
+}
+
+.card:hover .play {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card img{
+    border-radius: 10px;
+}
+
+
+.play{
+    width: 50px;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    opacity: var(--a);
+    transform: scale(0.8);
+    transition: all 0.4s;
+}
+
+.nav img:hover{
+    cursor: pointer;
+}
+
+
+
+.buttons button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    /* padding: 12px 22px; */
+}
+
+.buttons .sign:hover{
+    color: white;
+}
+
+.playbar{
+    position: absolute;
+    top: 93vh;
+    width: 98%;
+    border-radius: 7px;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10vh;
+    /* text-align: center; */
+    display: flex;
+    /* flex-direction: column; */
+    /* gap: 5px; */
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.playinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.duration-display{
+    font-family: 'poppins';
+}
+
+.songlist{
+    margin-top: 15px;
+    flex: 1 1 auto;
+    
+}
+
+.songlist ul{
+    list-style: none;
+    /* overflow-x: scroll; */
+    overflow-y: scroll;
+    height: 250px;
+    width: 100%;
+}
+
+.songlist li{
+    display: flex;
+    white-space: nowrap;
+    /* gap: 30px; */
+    border: 2px solid white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.playnow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.playnow p{
+    font-size: smaller;
+}
+
+.musicimg{
+    margin-left: 20px;
+}
+
+.songinfo{
+    margin-left: 10px;
+    width: 500px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    text-overflow: ellipsis;
+}
+
+.seekbar{
+    background-color: grey;
+    height: 5px;
+    width: 80%;
+    margin:2px;
+    cursor: pointer;
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: relative;
+    transform: translate(0px, -2px);
+    border-radius: 20px;
+    transition:left 0.1s linear;
+    left: 0;
+}
+
+.circle1{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: relative;
+    transform: translate(0px, -2px);
+    border-radius: 20px;
+    transition:left 0.1s linear;
+    left: 0;
+}
+
+.player{
+    cursor: pointer;
+}
+
+.volume{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volbar{
+    background-color: grey;
+    height: 5px;
+    width: 40%;
+    margin:2px;
+    cursor: pointer;
+}
+
+.pname{
+    font-family: 'poppins';
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.sname{
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+
+}
+
+
+.sound img{
+    position: relative;
+    top: 2px;
+    right: 5px;
+}

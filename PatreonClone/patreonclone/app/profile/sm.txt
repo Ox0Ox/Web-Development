@@ -1,0 +1,84 @@
+  const closeCropper = () => {
+    setCropping(false);
+  };
+
+  const startCropping = () => {
+    setCropping(true);
+  };
+
+
+
+
+const handleFileUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const imageUrl = URL.createObjectURL(file);
+      setBannerFile(imageUrl);
+      setImage(imageUrl);
+      setCropping(true); // Start cropping after upload
+    }
+  };
+
+
+
+
+
+<div className="cover w-full h-full bg-gray-300 flex items-center justify-center">
+          <span className="text-gray-500 hover:opacity-80 cursor-pointer">
+            {bannerFile ? 'Change Banner' : 'Add Banner'}
+          </span>
+          <input
+            type="file"
+            accept="image/*"
+            style={{ display: 'none' }}
+            onChange={handleFileUpload}
+            id="bannerUpload"
+          />
+        </div>
+        <label htmlFor="bannerUpload" className="absolute inset-0">
+          <div className="absolute inset-0 cursor-pointer" />
+        </label>
+        {bannerFile && (
+          <>
+            <img src={bannerFile} alt="Banner Preview" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute bottom-2 right-2 flex space-x-2">
+              <label htmlFor="bannerUpload" className="bg-gray-700 text-white px-2 py-1 rounded cursor-pointer">
+                Change
+              </label>
+              <button
+                onClick={startCropping}
+                className="bg-blue-500 text-white px-2 py-1 rounded cursor-pointer"
+              >
+                Crop
+              </button>
+              <button
+                onClick={clearBanner}
+                className="bg-red-500 text-white px-2 py-1 rounded cursor-pointer"
+              >
+                Clear
+              </button>
+            </div>
+          </>
+        )}
+
+        {cropping && (
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="absolute w-1/3 h-3/4 bg-white rounded-lg p-4">
+              <Cropper
+                image={image}
+                crop={crop}
+                zoom={zoom}
+                aspect={1308 / 384} // Aspect ratio for banner
+                onCropChange={setCrop}
+                onZoomChange={setZoom}
+                onCropComplete={handleCropComplete}
+              />
+              <button
+                onClick={closeCropper}
+                className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded cursor-pointer"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        )}
