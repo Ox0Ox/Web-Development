@@ -22,6 +22,7 @@ export async function PUT(req, { params }) {
     try {
         const { id } = params;
         const data = await req.json();
+        console.log('this is data: ',data);
         await connectToDatabase();
         const updatedUser = await User.findByIdAndUpdate(id, data, { new: true });
 

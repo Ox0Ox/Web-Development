@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const BlogList = () => {
   return (
-    <MaxWidthWrapper>
+    <MaxWidthWrapper classname=''>
       <h1 className="text-3xl font-bold mb-8">My Blogs</h1>
       {/* Grid for blog layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">

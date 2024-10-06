@@ -13,14 +13,28 @@ html {
   /* Chrome, Safari, Opera - hides scrollbar */
 }
 #main::-webkit-scrollbar-track {
-  background: #1d1d1d;
+  background: #bebebe;
   /* Chrome, Safari, Opera - hides scrollbar */
 }
 #main::-webkit-scrollbar-thumb {
-  background: #4d4d4d;
+  background: #767676;
   /* Chrome, Safari, Opera - hides scrollbar */
 }
 #main::-webkit-scrollbar-thumb:hover {
+  background: #464646;
+  /* Chrome, Safari, Opera - hides scrollbar */
+}
+
+
+.dark #main::-webkit-scrollbar-track {
+  background: #1d1d1d;
+  /* Chrome, Safari, Opera - hides scrollbar */
+}
+.dark #main::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+  /* Chrome, Safari, Opera - hides scrollbar */
+}
+.dark #main::-webkit-scrollbar-thumb:hover {
   background: #8e8e8e;
   /* Chrome, Safari, Opera - hides scrollbar */
 }

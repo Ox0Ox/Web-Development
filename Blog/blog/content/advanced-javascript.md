@@ -126,6 +126,7 @@ Call Stack: Contains the functions currently being executed.
 Task Queue: Contains tasks from asynchronous operations like setTimeout and setInterval.
 Microtask Queue: Contains tasks from promises (i.e., .then() and async/await).
 Example of the Event Loop
+
 ```js
 console.log('Start');
 
