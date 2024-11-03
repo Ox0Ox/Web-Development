@@ -35,11 +35,36 @@ const page = () => {
           <div className='text-center'>Feel free to join us and delve deep into these or other non technical domains.</div>
           <div className='text-center'>To know more click <Link className='underline text-blue-500' href={'/domains'}>here</Link></div>
         </div>
-        
-
-      </div>
+    </div>
     <div className="bg-white h-1 opacity-10 mt-10 w-full"></div>
-        
+    <div className="text-white flex flex-col items-center">
+        <div className="container mx-auto">
+          <h1 className="text-center mt-10 text-3xl font-bold">From our Heads</h1>
+          <div className="container mx-auto p-4 mt-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="carder hover:cursor-pointer hover:bg-blue-800 duration-300 bg-blue-950 rounded-xl p-4 text-center">
+            <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, veritatis. Et placeat, dolorem necessitatibus modi, minima ab incidunt similique ipsum vero fugit tenetur, eos culpa ex! Blanditiis itaque porro facilis repellendus sequi hic voluptatibus ratione ex quidem, cumque quasi possimus earum, sunt pariatur et asperiores deleniti eaque iusto perspiciatis aliquid?</div>
+          </div>
+          <div className="carder hover:cursor-pointer hover:bg-blue-800 duration-300 bg-blue-950 rounded-xl p-4 text-center">
+            <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, veritatis. Et placeat, dolorem necessitatibus modi, minima ab incidunt similique ipsum vero fugit tenetur, eos culpa ex! Blanditiis itaque porro facilis repellendus sequi hic voluptatibus ratione ex quidem, cumque quasi possimus earum, sunt pariatur et asperiores deleniti eaque iusto perspiciatis aliquid?</div>
+          </div>
+          <div className="carder hover:cursor-pointer hover:bg-blue-800 duration-300 bg-blue-950 rounded-xl p-4 text-center">
+            <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, veritatis. Et placeat, dolorem necessitatibus modi, minima ab incidunt similique ipsum vero fugit tenetur, eos culpa ex! Blanditiis itaque porro facilis repellendus sequi hic voluptatibus ratione ex quidem, cumque quasi possimus earum, sunt pariatur et asperiores deleniti eaque iusto perspiciatis aliquid?</div>
+          </div>
+          <div className="carder hover:cursor-pointer hover:bg-blue-800 duration-300 bg-blue-950 rounded-xl p-4 text-center">
+            <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, veritatis. Et placeat, dolorem necessitatibus modi, minima ab incidunt similique ipsum vero fugit tenetur, eos culpa ex! Blanditiis itaque porro facilis repellendus sequi hic voluptatibus ratione ex quidem, cumque quasi possimus earum, sunt pariatur et asperiores deleniti eaque iusto perspiciatis aliquid?</div>
+          </div>
+          <div className="carder hover:cursor-pointer hover:bg-blue-800 duration-300 bg-blue-950 rounded-xl p-4 text-center">
+            <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, veritatis. Et placeat, dolorem necessitatibus modi, minima ab incidunt similique ipsum vero fugit tenetur, eos culpa ex! Blanditiis itaque porro facilis repellendus sequi hic voluptatibus ratione ex quidem, cumque quasi possimus earum, sunt pariatur et asperiores deleniti eaque iusto perspiciatis aliquid?</div>
+          </div>
+          <div className="carder hover:cursor-pointer hover:bg-blue-800 duration-300 bg-blue-950 rounded-xl p-4 text-center">
+            <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, veritatis. Et placeat, dolorem necessitatibus modi, minima ab incidunt similique ipsum vero fugit tenetur, eos culpa ex! Blanditiis itaque porro facilis repellendus sequi hic voluptatibus ratione ex quidem, cumque quasi possimus earum, sunt pariatur et asperiores deleniti eaque iusto perspiciatis aliquid?</div>
+          </div>
+        </div>
+      </div>
+        </div>
+    </div>
+    <div className="bg-white h-1 opacity-10 mt-10 mb-1 w-full"></div>
 
     </>
   )
