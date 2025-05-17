@@ -12,7 +12,11 @@ yarn dev
 pnpm dev
 # or
 bun dev
+# or
+pnpm run dev
 ```
+
+To download just this folder use https://download-directory.github.io/ and copy paste url to download only this folder
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
